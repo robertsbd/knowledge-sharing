@@ -1,8 +1,10 @@
 # Set up a local spark data platform
 
-Creating a spark data platform on a local machine can be useful for learning about spark and delta lakes, when you may not have access to a cloud platform containing technologies such as Databricks or Synapse/FabricThese are steps that you can use to set up your own Spark Data Platform.
+Creating a spark data platform on a local machine can be useful for learning about spark and delta lakes when you may not have access to a cloud platform with technologies such as Databricks or Synapse/Fabric.
 
-This post documents how to set-up a Spark data platform on a systrm running Arch Linux. For other Linux distros these steps should work just adjust to use the appropriate package manager. I have done this previously on MacOS, the steps were very similar but I used the brew package manager rather than pacman.
+These are steps that you can use to set up your own Spark Data Platform.
+
+This page documents how to set-up a Spark data platform on a system running Arch Linux. For other Linux distros adjust to use the appropriate package manager. Likewise I have done this previously on MacOS, the steps are the same but I used the brew package manager rather than pacman.
 
 ## Step 1 Update all your packages and install any dependencies.
 
