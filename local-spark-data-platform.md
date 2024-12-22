@@ -104,14 +104,14 @@ tar xvf spark-3.5.4-bin-hadoop3.tgz
 Move the extracted folder to the right location on your system. I am moving mine to:
 
 ``` shell
-sudo mv spark-3.5.1-bin-hadoop3 /usr/local/spark
+sudo mv spark-3.5.4-bin-hadoop3 /usr/local/spark
 ```
 
 If you installed this in the same location as above add /usr/local/spark/bin to your path.
 
 ## Step 4 Verify your spark installation
 
-Run your spark shell with the below command and you should see the below:
+Run your spark shell with the below command "spark-shell" and you should see the below (note the below was from an install with an older version of Spark then mentioned above):
 
 ``` shell
 spark-shell
@@ -132,7 +132,7 @@ scala>
 
 ## Step 5 Verify Pyspark shell
 
-To use the pyspark shell enter and you should see the below
+To use the pyspark shell enter the command "pyspark" below and you should see
 
 ``` shell
 pyspark
@@ -172,3 +172,9 @@ pip install delta-spark
 ```
 
 You are now ready to create some Python scripts, and create a delta-lake on your own system.
+
+Here you can create a medallion architecture storing your delta files in different folders bronze, silver, gold if you like.
+
+Other things to do is to start to play around with the Hive metastore.
+
+As you play with these you will come to the realisation that Databricks, Synapse and Fabric are all very impressive, but are essentially a UI wrapper on Apache Spark and the Delta file format which is where the real magic lies.
